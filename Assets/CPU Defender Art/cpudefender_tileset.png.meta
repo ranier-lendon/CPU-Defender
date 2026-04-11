@@ -1,0 +1,1095 @@
+fileFormatVersion: 2
+guid: 5db9cd361c877ee40b343c78b90bbe47
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 87134154386510736
+    second: cpudefender_tileset_0
+  - first:
+      213: 1077528021916073721
+    second: cpudefender_tileset_1
+  - first:
+      213: 8308336701504740981
+    second: cpudefender_tileset_2
+  - first:
+      213: -4373890989984532258
+    second: cpudefender_tileset_3
+  - first:
+      213: 8729106218917697955
+    second: cpudefender_tileset_4
+  - first:
+      213: -4405924292620131512
+    second: cpudefender_tileset_5
+  - first:
+      213: -1000876969696827508
+    second: cpudefender_tileset_6
+  - first:
+      213: 4261030296018079646
+    second: cpudefender_tileset_7
+  - first:
+      213: -89478051005424671
+    second: cpudefender_tileset_8
+  - first:
+      213: 2191247399361444975
+    second: cpudefender_tileset_9
+  - first:
+      213: 7559832543185699693
+    second: cpudefender_tileset_10
+  - first:
+      213: -880795862446035796
+    second: cpudefender_tileset_11
+  - first:
+      213: -1705777276353936183
+    second: cpudefender_tileset_12
+  - first:
+      213: -4932554839488615261
+    second: cpudefender_tileset_13
+  - first:
+      213: 1456435764289022842
+    second: cpudefender_tileset_14
+  - first:
+      213: -1337281247923606880
+    second: cpudefender_tileset_15
+  - first:
+      213: 2772901823310982003
+    second: cpudefender_tileset_16
+  - first:
+      213: -7523706370714931210
+    second: cpudefender_tileset_17
+  - first:
+      213: 6770561330994969477
+    second: cpudefender_tileset_18
+  - first:
+      213: 703895295911825177
+    second: cpudefender_tileset_19
+  - first:
+      213: 5759918610921795993
+    second: cpudefender_tileset_20
+  - first:
+      213: -5189882129385195564
+    second: cpudefender_tileset_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cpudefender_tileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09313004d00953100800000000000000
+      internalID: 87134154386510736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe36d5e60624fe00800000000000000
+      internalID: 1077528021916073721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ed787e5342d4370800000000000000
+      internalID: 8308336701504740981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8b0b78151dc43c0800000000000000
+      internalID: -4373890989984532258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a91e397bd3042970800000000000000
+      internalID: 8729106218917697955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843ec1f03330bd2c0800000000000000
+      internalID: -4405924292620131512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87e95de2bb2c12f0800000000000000
+      internalID: -1000876969696827508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fc5537a78322b30800000000000000
+      internalID: 4261030296018079646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb90aacf2c12cef0800000000000000
+      internalID: -89478051005424671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2960
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cffe566efd86e10800000000000000
+      internalID: 2191247399361444975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d638502f4abe9e860800000000000000
+      internalID: 7559832543185699693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac254b64d8c6c3f0800000000000000
+      internalID: -880795862446035796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c48df0da9cd358e0800000000000000
+      internalID: -1705777276353936183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aca52dd18b0c8bb0800000000000000
+      internalID: -4932554839488615261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_14
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b2f907c9c463410800000000000000
+      internalID: 1456435764289022842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aae8bc4ac5017de0800000000000000
+      internalID: -1337281247923606880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_16
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37beb7f44835b7620800000000000000
+      internalID: 2772901823310982003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_17
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff613b0bec669790800000000000000
+      internalID: -7523706370714931210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_18
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b73f798add5fd50800000000000000
+      internalID: 6770561330994969477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_19
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f84efca0db4c900800000000000000
+      internalID: 703895295911825177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 991b72395775fef40800000000000000
+      internalID: 5759918610921795993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7f8d353b5d9f7b0800000000000000
+      internalID: -5189882129385195564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9eeae51d0bf96a42a07d6f3eca61158
+      internalID: 473719687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929d958bdc24ab14984eda27b6457616
+      internalID: 1295789014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_24
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c413d286a6fc34fa2a2d37aeadac6a
+      internalID: 710483927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d5fbbff49ddf04eaf050a649e775ce
+      internalID: 1473984475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_26
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e501580286cedae49b5f09f5bd72acea
+      internalID: 1504490744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_27
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b179d5467f9a3b4daa425a1a6fa5cf6
+      internalID: -1329565781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_28
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2640
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28b8b60b30a58d40800234f2efe3483
+      internalID: -199760224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4cb8e5bea15bea478d6e2051e0885c9
+      internalID: 2083795223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0628ca532b845488a478d2978ba278
+      internalID: -1138217711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_31
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f523fc3cb444d34b93c349c17ec39ff
+      internalID: 1555945458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_32
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209df4c9ff666a64695926c3aa4c2b22
+      internalID: -1093741727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a13f533f6895cc49a190eb65260ca3f
+      internalID: -1076768177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9499e4abf5490ff4b953aab48c9c5b87
+      internalID: -2092910355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_35
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd76a30b9bfe494e9320c9b69d091f8
+      internalID: -1934477587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_36
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11211f5a0d89c4f409399d8b8599583d
+      internalID: 806596669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b875095099cf4a43bd8f8332f411e40
+      internalID: -1618455820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cpudefender_tileset_38
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2480
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792825748f601524191c4db55be170b6
+      internalID: -417153061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 45bc34ff25e647a439a4ed7e821804dc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":160.0,"y":160.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      cpudefender_tileset_0: 87134154386510736
+      cpudefender_tileset_1: 1077528021916073721
+      cpudefender_tileset_10: 7559832543185699693
+      cpudefender_tileset_11: -880795862446035796
+      cpudefender_tileset_12: -1705777276353936183
+      cpudefender_tileset_13: -4932554839488615261
+      cpudefender_tileset_14: 1456435764289022842
+      cpudefender_tileset_15: -1337281247923606880
+      cpudefender_tileset_16: 2772901823310982003
+      cpudefender_tileset_17: -7523706370714931210
+      cpudefender_tileset_18: 6770561330994969477
+      cpudefender_tileset_19: 703895295911825177
+      cpudefender_tileset_2: 8308336701504740981
+      cpudefender_tileset_20: 5759918610921795993
+      cpudefender_tileset_21: -5189882129385195564
+      cpudefender_tileset_22: 473719687
+      cpudefender_tileset_23: 1295789014
+      cpudefender_tileset_24: 710483927
+      cpudefender_tileset_25: 1473984475
+      cpudefender_tileset_26: 1504490744
+      cpudefender_tileset_27: -1329565781
+      cpudefender_tileset_28: -199760224
+      cpudefender_tileset_29: 2083795223
+      cpudefender_tileset_3: -4373890989984532258
+      cpudefender_tileset_30: -1138217711
+      cpudefender_tileset_31: 1555945458
+      cpudefender_tileset_32: -1093741727
+      cpudefender_tileset_33: -1076768177
+      cpudefender_tileset_34: -2092910355
+      cpudefender_tileset_35: -1934477587
+      cpudefender_tileset_36: 806596669
+      cpudefender_tileset_37: -1618455820
+      cpudefender_tileset_38: -417153061
+      cpudefender_tileset_4: 8729106218917697955
+      cpudefender_tileset_5: -4405924292620131512
+      cpudefender_tileset_6: -1000876969696827508
+      cpudefender_tileset_7: 4261030296018079646
+      cpudefender_tileset_8: -89478051005424671
+      cpudefender_tileset_9: 2191247399361444975
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
