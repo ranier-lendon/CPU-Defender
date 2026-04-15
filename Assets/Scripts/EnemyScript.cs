@@ -17,11 +17,7 @@ public class EnemyScript : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         // Find the ports path
-        Debug.Log(portSpawned);
         waypoints = GameObject.Find("Ports").transform.GetChild(portSpawned).GetComponent<PortPath>().GetWaypoints();
-        Debug.Log(portSpawned);
-        Debug.Log(GameObject.Find("Ports").transform.GetChild(portSpawned).name);
-        
     }
 
     void FixedUpdate()
@@ -32,7 +28,7 @@ public class EnemyScript : MonoBehaviour
         // Checks if the enemy has reached the target waypoint
         if (Vector3.Distance(transform.position, nextWaypoint.transform.position) < 0.05f)
         {
-            // Increments the current waypoint index
+            // Increments the current waypoint
             currentWaypoint++;
         }
     }
