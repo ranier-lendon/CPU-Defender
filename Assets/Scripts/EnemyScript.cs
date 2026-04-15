@@ -4,46 +4,44 @@ public class EnemyScript : MonoBehaviour
 {
     [SerializeField] private float health = 100f;
 
-    private Transform currentWaypoint;
-    private int currentWaypointIndex = 0;
-    private Transform targetWaypoint;
+    private int currentWaypoint = 0;
 
-
-    [SerializeField] private GameObject waypoints;
+    private GameObject[] waypoints;
     private Rigidbody rb;
+
+    public int portSpawned = 1;
 
     void Start()
     {
         // Get the rigidbody component
         rb = GetComponent<Rigidbody>();
 
-        // Find the waypoints object
-        waypoints = GameObject.Find("Waypoints");
-
-        // Set initial waypoints
-        currentWaypoint = waypoints.transform.GetChild(currentWaypointIndex);
-        targetWaypoint = waypoints.transform.GetChild(currentWaypointIndex + 1);
+        // Find the ports path
+        Debug.Log(portSpawned);
+        waypoints = GameObject.Find("Ports").transform.GetChild(portSpawned).GetComponent<PortPath>().GetWaypoints();
+        Debug.Log(portSpawned);
+        Debug.Log(GameObject.Find("Ports").transform.GetChild(portSpawned).name);
+        
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(transform.position + FindPath() * Time.fixedDeltaTime);
 
+        GameObject nextWaypoint = waypoints[currentWaypoint + 1];
         // Checks if the enemy has reached the target waypoint
-        if (Vector3.Distance(transform.position, targetWaypoint.position) < 0.2f)
+        if (Vector3.Distance(transform.position, nextWaypoint.transform.position) < 0.05f)
         {
-            // Sets the target waypoint to current waypoint
-            currentWaypoint = targetWaypoint;
             // Increments the current waypoint index
-            currentWaypointIndex++;
-            // Sets the target waypoint to the next waypoint
-            targetWaypoint = waypoints.transform.GetChild(currentWaypointIndex + 1);
+            currentWaypoint++;
         }
     }
 
     private Vector3 FindPath()
     {
-        Vector3 direction = (targetWaypoint.position - transform.position).normalized;
+        GameObject nextWaypoint = waypoints[currentWaypoint + 1];
+    
+        Vector3 direction = (nextWaypoint.transform.position - transform.position).normalized;
         return direction;
     }
 
