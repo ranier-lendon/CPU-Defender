@@ -1,14 +1,30 @@
 using UnityEngine;
+using System.Collections;
 
 public class PortSpawn : MonoBehaviour
 {
-    void Start()
-    {
-        
+    [SerializeField] private GameObject[] malwares;
+    private GameObject[] path;
+
+    private int portNumber;
+    
+    void Start() {
+        // Get the path from the port
+        path = transform.GetComponent<PortPath>().GetWaypoints();
+
+        // Get the port number
+        portNumber = int.Parse(transform.name.Replace("Port", ""));
     }
 
-    void Update()
+    public void SpawnMalware(GameManager.MalwareType type)
     {
-        
+        GameObject malware = malwares[(int) type];
+        Transform startWaypoint = path[0].transform;
+
+        // Spawns the malware
+        GameObject malwareObject = Instantiate(malware, startWaypoint.position, malware.transform.rotation);
+
+        // Set the port number
+        malwareObject.GetComponent<EnemyScript>().portSpawned = portNumber-1;
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7872378031943998353}
   - component: {fileID: 9081492261813147068}
   - component: {fileID: -8296669856347831927}
+  - component: {fileID: 4035890090816957150}
   m_Layer: 0
   m_Name: OpenPort
   m_TagString: Untagged
@@ -105,3 +106,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PortPath
   waypoints: []
+--- !u!114 &4035890090816957150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3603430552276830533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 511deb12255b1044f88997bce479103b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PortSpawn
+  malwares:
+  - {fileID: 8490770469816686335, guid: 752ca4798d25d2145ba21f5054a26aab, type: 3}
+  - {fileID: 6300781677147840544, guid: 195969cc334d6eb4eb29f21c29287f46, type: 3}
+  - {fileID: 3605545115687257439, guid: 84142c090f6e74f489e4f073506ca3be, type: 3}
+  - {fileID: 8399900179279288562, guid: 16cc7599aa0b37148931de45f0d1b032, type: 3}
+  - {fileID: 1570117693946947083, guid: ac1395d4ce51e774fa148c35b0f23756, type: 3}
