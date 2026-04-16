@@ -5587,7 +5587,7 @@ PrefabInstance:
       objectReference: {fileID: 976011953}
     - target: {fileID: 3603430552276830533, guid: bf04d2ed083725f49a1b876593a6e128, type: 3}
       propertyPath: m_Name
-      value: 2
+      value: Port2
       objectReference: {fileID: 0}
     - target: {fileID: 7872378031943998353, guid: bf04d2ed083725f49a1b876593a6e128, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5845,7 +5845,7 @@ PrefabInstance:
       objectReference: {fileID: 976011953}
     - target: {fileID: 3603430552276830533, guid: bf04d2ed083725f49a1b876593a6e128, type: 3}
       propertyPath: m_Name
-      value: 1
+      value: Port1
       objectReference: {fileID: 0}
     - target: {fileID: 7872378031943998353, guid: bf04d2ed083725f49a1b876593a6e128, type: 3}
       propertyPath: m_LocalPosition.x
