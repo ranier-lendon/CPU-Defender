@@ -5,6 +5,8 @@ public class RouterScript : MonoBehaviour
 {
     private int level = 1;
     private float moneyPerSecond = 1f;
+    private int baseCost = 20;
+    private float costMultiplier = 1.5f;
 
     void Start()
     {
@@ -28,7 +30,6 @@ public class RouterScript : MonoBehaviour
 
     public int GetCost()
     {
-        // need formula
-        return 0;
+        return Mathf.RoundToInt(baseCost * Mathf.Pow(costMultiplier, level - 1));
     }
 }

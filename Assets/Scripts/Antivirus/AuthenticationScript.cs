@@ -11,8 +11,14 @@ public class AuthenticationScript : MonoBehaviour
     private int level = 1;
 
     [SerializeField] private float range;
+    private float baseRange = 2f;
+    private float maxRange = 3.5f;
     [SerializeField] private float fireRate;
+    private float baseFireRate = 2f;
+    private float maxFireRate = 1f;
     [SerializeField] private float damage;
+    private int baseCost = 100;
+    private float costMultiplier = 1.5f;
 
     IEnumerator Fire()
     {
@@ -66,13 +72,13 @@ public class AuthenticationScript : MonoBehaviour
     public void Upgrade()
     {
         level++;
-        damage += 10f;
-        range = 2 + (level * 0.125f);
+        damage = level * 25f;
+        fireRate = Mathf.Clamp(baseFireRate - (level * 0.1f), maxFireRate, baseFireRate);
+        range = Mathf.Clamp(baseRange + (level * 0.125f), baseRange, maxRange);
     }
 
     public int GetCost()
     {
-        // need formula
-        return 0;
+        return Mathf.RoundToInt(baseCost * Mathf.Pow(costMultiplier, level - 1));
     }
 }

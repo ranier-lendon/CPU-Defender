@@ -5847,9 +5847,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97bb9a733bbec0488adc84279f6dcfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SIEMScript
-  range: 0
-  fireRate: 0
-  damage: 0
+  range: 2
+  fireRate: 0.5
+  damage: 7.5
 --- !u!1 &2004830363
 GameObject:
   m_ObjectHideFlags: 0
@@ -5962,9 +5962,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed82b3ade042044780336e41c57fa9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AuthenticationScript
-  range: 0
-  fireRate: 0
-  damage: 0
+  range: 2
+  fireRate: 2
+  damage: 50
 --- !u!1001 &1239791829526807135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6079,8 +6079,12 @@ PrefabInstance:
       value: Firewall
       objectReference: {fileID: 0}
     - target: {fileID: 4380994669028597902, guid: 41445daca83049140a7418a662e8ccc0, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4380994669028597902, guid: 41445daca83049140a7418a662e8ccc0, type: 3}
       propertyPath: fireRate
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6350066349070403819, guid: 41445daca83049140a7418a662e8ccc0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6266,11 +6270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2623196211368967260, guid: 1a3e669f07f69004095828221f5cc382, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.22
       objectReference: {fileID: 0}
     - target: {fileID: 2623196211368967260, guid: 1a3e669f07f69004095828221f5cc382, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.17
       objectReference: {fileID: 0}
     - target: {fileID: 2623196211368967260, guid: 1a3e669f07f69004095828221f5cc382, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6304,6 +6308,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7743917785262724060, guid: 1a3e669f07f69004095828221f5cc382, type: 3}
+      propertyPath: m_Radius
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6320,6 +6328,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1248304909}
     m_Modifications:
+    - target: {fileID: 1965036655339282879, guid: 84fb4d4f2c7f06d43bb178095df9cbb7, type: 3}
+      propertyPath: m_Radius
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5930709721651728570, guid: 84fb4d4f2c7f06d43bb178095df9cbb7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.85000014
