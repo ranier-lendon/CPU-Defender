@@ -21,7 +21,7 @@ public class EnemyScript : MonoBehaviour
         // Find the ports path
         waypoints = GameObject.Find("Ports").transform.GetChild(portSpawned).GetComponent<PortPath>().GetWaypoints();
 
-        // Set the default movement speed
+        // Set the base movement speed
         movementSpeed = baseMovementSpeed;
     }
 
@@ -68,5 +68,10 @@ public class EnemyScript : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+    }
+
+    public float GetBaseMovementSpeed()
+    {
+        return baseMovementSpeed;
     }
 }
