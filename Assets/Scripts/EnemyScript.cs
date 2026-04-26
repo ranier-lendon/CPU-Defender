@@ -5,6 +5,8 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] private float health = 100f;
 
     private int currentWaypoint = 0;
+    private float movementSpeed;
+    [SerializeField] private float baseMovementSpeed = 1f;
 
     private GameObject[] waypoints;
     private Rigidbody rb;
@@ -18,11 +20,14 @@ public class EnemyScript : MonoBehaviour
 
         // Find the ports path
         waypoints = GameObject.Find("Ports").transform.GetChild(portSpawned).GetComponent<PortPath>().GetWaypoints();
+
+        // Set the base movement speed
+        movementSpeed = baseMovementSpeed;
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(transform.position + FindPath() * Time.fixedDeltaTime);
+        rb.MovePosition(transform.position + FindPath() * Time.fixedDeltaTime * movementSpeed);
 
         GameObject nextWaypoint = waypoints[currentWaypoint + 1];
         // Checks if the enemy has reached the target waypoint
@@ -50,8 +55,28 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
+    public float GetMovementSpeed()
+    {
+        return movementSpeed;
+    }
+
+    public void SetMovementSpeed(float speed)
+    {
+        movementSpeed = speed;
+    }
+
     private void Die()
     {
         Destroy(gameObject);
+    }
+
+    public float GetBaseMovementSpeed()
+    {
+        return baseMovementSpeed;
+    }
+
+    public float GetHealth()
+    {
+        return health;
     }
 }
