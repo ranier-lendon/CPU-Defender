@@ -27,7 +27,7 @@ public class FirewallScript : MonoBehaviour
                 yield break;
             }
 
-            // 
+            // Target the first malware on the list.
             target = malwareList[0];
 
             // Damage the first malware on the list.
