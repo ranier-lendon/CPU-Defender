@@ -6132,7 +6132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6584452742179057909, guid: 41445daca83049140a7418a662e8ccc0, type: 3}
       propertyPath: m_Radius
-      value: 2
+      value: 1.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6334,7 +6334,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1965036655339282879, guid: 84fb4d4f2c7f06d43bb178095df9cbb7, type: 3}
       propertyPath: m_Radius
-      value: 3.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5930709721651728570, guid: 84fb4d4f2c7f06d43bb178095df9cbb7, type: 3}
       propertyPath: m_LocalPosition.x
