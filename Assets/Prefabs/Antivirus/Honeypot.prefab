@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2590441975077387276}
   - component: {fileID: 3748912123715790469}
   - component: {fileID: 9204828068432810620}
+  - component: {fileID: 392289839454677709}
   m_Layer: 0
   m_Name: Honeypot
   m_TagString: Antivirus
@@ -113,3 +114,15 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 2.2012122
   m_Center: {x: 0.00000002980232, y: 0, z: 0}
+--- !u!114 &392289839454677709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6179173264370337030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a9ec6acd9842f4db5b5c6213af449a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoneypotScript
