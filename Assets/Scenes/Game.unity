@@ -6076,11 +6076,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2590441975077387276, guid: c9be49c394940c54ebdecc9e6b0387a7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.73
+      value: -8.03
       objectReference: {fileID: 0}
     - target: {fileID: 2590441975077387276, guid: c9be49c394940c54ebdecc9e6b0387a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.02
+      value: 4.7
       objectReference: {fileID: 0}
     - target: {fileID: 2590441975077387276, guid: c9be49c394940c54ebdecc9e6b0387a7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6117,6 +6117,10 @@ PrefabInstance:
     - target: {fileID: 6179173264370337030, guid: c9be49c394940c54ebdecc9e6b0387a7, type: 3}
       propertyPath: m_Name
       value: Honeypot
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204828068432810620, guid: c9be49c394940c54ebdecc9e6b0387a7, type: 3}
+      propertyPath: m_Radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
