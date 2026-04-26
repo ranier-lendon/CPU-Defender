@@ -5,6 +5,7 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] private float health = 100f;
 
     private int currentWaypoint = 0;
+    [SerializeField]private float movementSpeed = 1f;
 
     private GameObject[] waypoints;
     private Rigidbody rb;
@@ -22,7 +23,7 @@ public class EnemyScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(transform.position + FindPath() * Time.fixedDeltaTime);
+        rb.MovePosition(transform.position + FindPath() * Time.fixedDeltaTime * movementSpeed);
 
         GameObject nextWaypoint = waypoints[currentWaypoint + 1];
         // Checks if the enemy has reached the target waypoint
@@ -48,6 +49,16 @@ public class EnemyScript : MonoBehaviour
         {
             Die();
         }
+    }
+
+    public float GetMovementSpeed()
+    {
+        return movementSpeed;
+    }
+
+    public void SetMovementSpeed(float speed)
+    {
+        movementSpeed = speed;
     }
 
     private void Die()
