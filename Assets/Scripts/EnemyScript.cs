@@ -6,7 +6,7 @@ public class EnemyScript : MonoBehaviour
 
     private int currentWaypoint = 0;
     private float movementSpeed;
-    [SerializeField] private float defaultMovementSpeed;
+    [SerializeField] private float baseMovementSpeed = 1f;
 
     private GameObject[] waypoints;
     private Rigidbody rb;
@@ -22,7 +22,7 @@ public class EnemyScript : MonoBehaviour
         waypoints = GameObject.Find("Ports").transform.GetChild(portSpawned).GetComponent<PortPath>().GetWaypoints();
 
         // Set the default movement speed
-        movementSpeed = defaultMovementSpeed;
+        movementSpeed = baseMovementSpeed;
     }
 
     void FixedUpdate()
