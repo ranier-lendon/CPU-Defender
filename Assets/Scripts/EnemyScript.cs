@@ -74,4 +74,9 @@ public class EnemyScript : MonoBehaviour
     {
         return baseMovementSpeed;
     }
+
+    public float GetHealth()
+    {
+        return health;
+    }
 }

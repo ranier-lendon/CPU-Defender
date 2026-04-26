@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour
         Spyware = 4
     }
 
-    
+    [SerializeField] private GameObject port1;   
+    [SerializeField] private GameObject port2;
 
+    void Start()
+    {
+        port1.GetComponent<PortSpawn>().SpawnMalware(MalwareType.Virus);
+    }
 }

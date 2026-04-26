@@ -11,7 +11,7 @@ public class HoneypotScript : MonoBehaviour
 
     private int[] cost = {300, 600, 1000, 2500};
 
-    void Start() 
+    void Start()
     {
         // Get the sphere collider
         col = GetComponent<SphereCollider>();
@@ -62,7 +62,7 @@ public class HoneypotScript : MonoBehaviour
         {
             // Returns 0 if cannot be upgraded
             return 0;
-        } 
+        }
         else 
         {
             // Returns the cost of the next upgrade
