@@ -9,7 +9,6 @@ public class FirewallScript : MonoBehaviour
     private GameObject target;
 
     private int level = 1;
-    private int maxLevel = 5;
 
     [SerializeField] private float range;
     [SerializeField] private float fireRate;
@@ -62,5 +61,18 @@ public class FirewallScript : MonoBehaviour
         {
             malwareList.Remove(other.gameObject);
         }
+    }
+
+    public void Upgrade()
+    {
+        level++;
+        damage += 10f;
+        range = 2 + (level * 0.125f);
+    }
+
+    public int GetCost()
+    {
+        // need formula
+        return 0;
     }
 }
