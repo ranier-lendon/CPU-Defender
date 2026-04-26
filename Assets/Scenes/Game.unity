@@ -5825,11 +5825,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2040096054}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1948087624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7860239359724299392, guid: 84fb4d4f2c7f06d43bb178095df9cbb7, type: 3}
+  m_PrefabInstance: {fileID: 8392577794144949113}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1948087625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5930709721651728570, guid: 84fb4d4f2c7f06d43bb178095df9cbb7, type: 3}
   m_PrefabInstance: {fileID: 8392577794144949113}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1948087628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948087624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97bb9a733bbec0488adc84279f6dcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SIEMScript
+  range: 0
+  fireRate: 0
+  damage: 0
 --- !u!1 &2004830363
 GameObject:
   m_ObjectHideFlags: 0
@@ -5920,11 +5940,31 @@ Transform:
   - {fileID: 976011954}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2144133218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 170375330621902303, guid: 1a3e669f07f69004095828221f5cc382, type: 3}
+  m_PrefabInstance: {fileID: 7923429210542043724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2144133219 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2623196211368967260, guid: 1a3e669f07f69004095828221f5cc382, type: 3}
   m_PrefabInstance: {fileID: 7923429210542043724}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2144133222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144133218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed82b3ade042044780336e41c57fa9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AuthenticationScript
+  range: 0
+  fireRate: 0
+  damage: 0
 --- !u!1001 &1239791829526807135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6267,7 +6307,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 170375330621902303, guid: 1a3e669f07f69004095828221f5cc382, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2144133222}
   m_SourcePrefab: {fileID: 100100000, guid: 1a3e669f07f69004095828221f5cc382, type: 3}
 --- !u!1001 &8392577794144949113
 PrefabInstance:
@@ -6324,7 +6367,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7860239359724299392, guid: 84fb4d4f2c7f06d43bb178095df9cbb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1948087628}
   m_SourcePrefab: {fileID: 100100000, guid: 84fb4d4f2c7f06d43bb178095df9cbb7, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
