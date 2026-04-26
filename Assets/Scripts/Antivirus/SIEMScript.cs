@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class SIEMScript : MonoBehaviour
 {
+    private SphereCollider sphereCollider;
     private List<GameObject> malwareList = new List<GameObject>();
     private Coroutine attackCoroutine;
     private GameObject target;
@@ -18,6 +19,11 @@ public class SIEMScript : MonoBehaviour
     private int baseCost = 50;
     private float costMultiplier = 1.5f;
     
+    void Start()
+    {
+        sphereCollider = GetComponent<SphereCollider>();
+        sphereCollider.radius = baseRange;
+    }
 
     IEnumerator Fire()
     {

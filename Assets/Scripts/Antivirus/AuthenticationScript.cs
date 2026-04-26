@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class AuthenticationScript : MonoBehaviour
 {
+    private SphereCollider sphereCollider;
     private List<GameObject> malwareList = new List<GameObject>();
     private Coroutine attackCoroutine;
     private GameObject target;
@@ -19,6 +20,12 @@ public class AuthenticationScript : MonoBehaviour
     [SerializeField] private float damage;
     private int baseCost = 100;
     private float costMultiplier = 1.5f;
+
+    void Start()
+    {
+        sphereCollider = GetComponent<SphereCollider>();
+        sphereCollider.radius = baseRange;
+    }
 
     IEnumerator Fire()
     {
