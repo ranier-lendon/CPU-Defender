@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using static GameManager;
 
 public class PortSpawn : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class PortSpawn : MonoBehaviour
         portNumber = int.Parse(transform.name.Replace("Port", ""));
     }
 
-    public void SpawnMalware(GameManager.MalwareType type)
+    public void SpawnMalware(MalwareType type)
     {
         GameObject malware = malwares[(int) type];
         Transform startWaypoint = path[0].transform;

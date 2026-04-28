@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using static GameManager;
 
 public class WaveSystem : MonoBehaviour
 {
     [SerializeField] private GameObject[] ports;
 
-    IEnumerator StartWave(int wave)
+    public IEnumerator StartWave(int wave)
     {
         if (wave <= 5) 
         {
@@ -48,7 +49,7 @@ public class WaveSystem : MonoBehaviour
 
     IEnumerator SpawnWithDelay(MalwareType type, int port)
     {
-        ports[port-1].SpawnMalware(type);
-        yield return new WaitForSeconds(1f); // change this to your delay
+        ports[port-1].GetComponent<PortSpawn>().SpawnMalware(type);
+        yield return new WaitForSeconds(1f);
     }
 }
