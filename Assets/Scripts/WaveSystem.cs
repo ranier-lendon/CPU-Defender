@@ -6,6 +6,18 @@ public class WaveSystem : MonoBehaviour
 {
     [SerializeField] private GameObject[] ports;
 
+    private MalwareType[] mTypes = {
+        MalwareType.Virus, 
+        MalwareType.Trojan, 
+        MalwareType.Worm, 
+        MalwareType.Ransomware, 
+        MalwareType.Spyware
+    };
+
+    void Start() {
+        StartCoroutine(StartWave(5));
+    }
+
     public IEnumerator StartWave(int wave)
     {
         if (wave <= 5) 
@@ -13,29 +25,29 @@ public class WaveSystem : MonoBehaviour
             switch (wave)
             {
                 case 1:
-                    yield return SpawnWithDelay(MalwareType.Virus, 1);
+                    yield return SpawnWithDelay(mTypes[0], 1);
                     break;
                 case 2:
-                    yield return SpawnWithDelay(MalwareType.Virus, 1);
-                    yield return SpawnWithDelay(MalwareType.Trojan, 1);
+                    yield return SpawnWithDelay(mTypes[0], 1);
+                    yield return SpawnWithDelay(mTypes[1], 1);
                     break;
                 case 3:
-                    yield return SpawnWithDelay(MalwareType.Virus, 1);
-                    yield return SpawnWithDelay(MalwareType.Trojan, 1);
-                    yield return SpawnWithDelay(MalwareType.Worm, 1);
+                    yield return SpawnWithDelay(mTypes[0], 1);
+                    yield return SpawnWithDelay(mTypes[1], 1);
+                    yield return SpawnWithDelay(mTypes[2], 1);
                     break;
                 case 4:
-                    yield return SpawnWithDelay(MalwareType.Virus, 1);
-                    yield return SpawnWithDelay(MalwareType.Trojan, 1);
-                    yield return SpawnWithDelay(MalwareType.Worm, 1);
-                    yield return SpawnWithDelay(MalwareType.Ransomware, 1);
+                    yield return SpawnWithDelay(mTypes[0], 1);
+                    yield return SpawnWithDelay(mTypes[1], 1);
+                    yield return SpawnWithDelay(mTypes[2], 1);
+                    yield return SpawnWithDelay(mTypes[3], 1);
                     break;
                 case 5:
-                    yield return SpawnWithDelay(MalwareType.Virus, 1);
-                    yield return SpawnWithDelay(MalwareType.Trojan, 1);
-                    yield return SpawnWithDelay(MalwareType.Worm, 1);
-                    yield return SpawnWithDelay(MalwareType.Ransomware, 1);
-                    yield return SpawnWithDelay(MalwareType.Spyware, 1);
+                    yield return SpawnWithDelay(mTypes[0], 1);
+                    yield return SpawnWithDelay(mTypes[1], 1);
+                    yield return SpawnWithDelay(mTypes[2], 1);
+                    yield return SpawnWithDelay(mTypes[3], 1);
+                    yield return SpawnWithDelay(mTypes[4], 1);
                     break;
             }
         }
