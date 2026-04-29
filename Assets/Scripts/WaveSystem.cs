@@ -58,7 +58,7 @@ public class WaveSystem : MonoBehaviour
         else 
         {
             int group = (wave-6)/5 + 1; // Group 1: 6-10, Group 2: 11-15 ...
-            int malwareCount = group * 10; // Counts how many malware to spawn
+            int malwareCount = Mathf.Clamp(group * 10, 10, 100); // Counts how many malware to spawn
             
             for (int i = 0; i < malwareCount; i++) 
             {
