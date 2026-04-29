@@ -32,9 +32,6 @@ public class EnemyScript : MonoBehaviour
 
             movementSpeed = Mathf.Clamp(buffSpeed, baseMovementSpeed, baseMovementSpeed * 1.5f);
         }
-
-        Debug.Log("HP: " + health);
-        Debug.Log("Speed: " + movementSpeed);
     }
 
     void FixedUpdate()

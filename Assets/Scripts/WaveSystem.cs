@@ -62,6 +62,7 @@ public class WaveSystem : MonoBehaviour
             
             for (int i = 0; i < malwareCount; i++) 
             {
+                // Spawns random malware on random ports
                 int randomType = Random.Range(0, mTypes.Length);
                 int randomPort = Random.Range(0, ports.Length);
                 yield return SpawnWithDelay(mTypes[randomType], randomPort);
