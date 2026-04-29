@@ -14,10 +14,15 @@ public class WaveSystem : MonoBehaviour
         MalwareType.Spyware
     };
 
-    public IEnumerator StartWave()
+    public void Start()
+    {
+        StartCoroutine(Wave());
+    }
+
+    IEnumerator Wave()
     {
         int wave = GameManager.GetWave();
-        
+
         // For the first 5 waves
         if (wave <= 5) 
         {

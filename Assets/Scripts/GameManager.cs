@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private static float money = 0;
     [SerializeField] private static int wave = 1;
 
+    private WaveSystem waveSystem;
+
     // Introducing Malwares
     // Wave 1-5: 1*wave malwares
     // Wave 6-10: 10 malwares
@@ -24,7 +26,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+        waveSystem = transform.GetChild(0).GetComponent<WaveSystem>();
+
+        waveSystem.Start();
     }
 
     public static int GetWave()
