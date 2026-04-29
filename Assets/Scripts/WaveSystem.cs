@@ -29,29 +29,29 @@ public class WaveSystem : MonoBehaviour
             switch (wave)
             {
                 case 1:
-                    yield return SpawnWithDelay(mTypes[0], 1);
+                    yield return SpawnWithDelay(mTypes[0], 0);
                     break;
                 case 2:
-                    yield return SpawnWithDelay(mTypes[0], 1);
-                    yield return SpawnWithDelay(mTypes[1], 1);
+                    yield return SpawnWithDelay(mTypes[0], 0);
+                    yield return SpawnWithDelay(mTypes[1], 0);
                     break;
                 case 3:
-                    yield return SpawnWithDelay(mTypes[0], 1);
-                    yield return SpawnWithDelay(mTypes[1], 1);
-                    yield return SpawnWithDelay(mTypes[2], 1);
+                    yield return SpawnWithDelay(mTypes[0], 0);
+                    yield return SpawnWithDelay(mTypes[1], 0);
+                    yield return SpawnWithDelay(mTypes[2], 0);
                     break;
                 case 4:
-                    yield return SpawnWithDelay(mTypes[0], 1);
-                    yield return SpawnWithDelay(mTypes[1], 1);
-                    yield return SpawnWithDelay(mTypes[2], 1);
-                    yield return SpawnWithDelay(mTypes[3], 1);
+                    yield return SpawnWithDelay(mTypes[0], 0);
+                    yield return SpawnWithDelay(mTypes[1], 0);
+                    yield return SpawnWithDelay(mTypes[2], 0);
+                    yield return SpawnWithDelay(mTypes[3], 0);
                     break;
                 case 5:
-                    yield return SpawnWithDelay(mTypes[0], 1);
-                    yield return SpawnWithDelay(mTypes[1], 1);
-                    yield return SpawnWithDelay(mTypes[2], 1);
-                    yield return SpawnWithDelay(mTypes[3], 1);
-                    yield return SpawnWithDelay(mTypes[4], 1);
+                    yield return SpawnWithDelay(mTypes[0], 0);
+                    yield return SpawnWithDelay(mTypes[1], 0);
+                    yield return SpawnWithDelay(mTypes[2], 0);
+                    yield return SpawnWithDelay(mTypes[3], 0);
+                    yield return SpawnWithDelay(mTypes[4], 0);
                     break;
             }
         }
