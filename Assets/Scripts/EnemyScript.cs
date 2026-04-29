@@ -5,7 +5,7 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] private float health = 100f;
 
     private int currentWaypoint = 0;
-    private float movementSpeed;
+    public float movementSpeed;
     [SerializeField] private float baseMovementSpeed = 1f;
 
     private GameObject[] waypoints;
@@ -71,7 +71,7 @@ public class EnemyScript : MonoBehaviour
 
     public void SetMovementSpeed(float speed)
     {
-        movementSpeed += speed;
+        movementSpeed = speed;
     }
 
     public float GetMovementSpeed()

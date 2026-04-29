@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] private static float money = 0;
-    [SerializeField] private static int wave = 1;
+    [SerializeField] private static int wave = 6;
 
     private WaveSystem waveSystem;
 

@@ -28,7 +28,7 @@ public class HoneypotScript : MonoBehaviour
         {
             // Slows down the malware
             float baseSpeed = other.GetComponent<EnemyScript>().GetBaseMovementSpeed();
-            other.GetComponent<EnemyScript>().SetMovementSpeed(baseSpeed * (1-slowDownRate*level));
+            other.GetComponent<EnemyScript>().SetMovementSpeed(baseSpeed - slowDownRate*level);
         }
     }
 
