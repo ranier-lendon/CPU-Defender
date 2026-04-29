@@ -27,6 +27,11 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public static int GetWave()
+    {
+        return wave;
+    }
+
     public static void AddMoney(float amount)
     {
         money += amount;

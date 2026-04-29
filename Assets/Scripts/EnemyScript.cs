@@ -23,6 +23,18 @@ public class EnemyScript : MonoBehaviour
 
         // Set the base movement speed
         movementSpeed = baseMovementSpeed;
+
+        // Buffs the hp and movement speed if wave is more than 50
+        if (GameManager.GetWave() > 50)
+        {
+            health += health * (0.01f * (GameManager.GetWave() - 50));
+            float buffSpeed = baseMovementSpeed * (0.05f * (GameManager.GetWave() - 50));
+
+            movementSpeed = Mathf.Clamp(buffSpeed, baseMovementSpeed, baseMovementSpeed * 1.5f);
+        }
+
+        Debug.Log("HP: " + health);
+        Debug.Log("Speed: " + movementSpeed);
     }
 
     void FixedUpdate()
@@ -55,19 +67,19 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
-    public float GetMovementSpeed()
+    private void Die()
     {
-        return movementSpeed;
+        Destroy(gameObject);
     }
 
     public void SetMovementSpeed(float speed)
     {
-        movementSpeed = speed;
+        movementSpeed += speed;
     }
 
-    private void Die()
+    public float GetMovementSpeed()
     {
-        Destroy(gameObject);
+        return movementSpeed;
     }
 
     public float GetBaseMovementSpeed()
