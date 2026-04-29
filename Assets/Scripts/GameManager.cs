@@ -11,14 +11,29 @@ public class GameManager : MonoBehaviour
         Spyware = 4
     }
 
-    [SerializeField] private GameObject port1;   
-    [SerializeField] private GameObject port2;
-
     [SerializeField] private static float money = 0;
+    [SerializeField] private static int wave = 1;
+
+    private WaveSystem waveSystem;
+
+    // Introducing Malwares
+    // Wave 1-5: 1*wave malwares
+    // Wave 6-10: 10 malwares
+    // Wave 11-15: 20 malwares
+    // ...
+    // Wave 46-50: 100 malwares
+    // Wave 51+: 100 malwares (Malwares's HP increases by 1% each wave)
 
     void Start()
     {
-        port1.GetComponent<PortSpawn>().SpawnMalware(MalwareType.Virus);
+        waveSystem = transform.GetChild(0).GetComponent<WaveSystem>();
+
+        waveSystem.Start();
+    }
+
+    public static int GetWave()
+    {
+        return wave;
     }
 
     public static void AddMoney(float amount)

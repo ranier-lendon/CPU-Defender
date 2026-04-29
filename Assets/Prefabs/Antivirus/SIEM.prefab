@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5930709721651728570}
   - component: {fileID: 1558502555888190145}
   - component: {fileID: 1965036655339282879}
+  - component: {fileID: 114962975451652368}
   m_Layer: 0
   m_Name: SIEM
   m_TagString: Antivirus
@@ -111,5 +112,20 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.32
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114962975451652368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860239359724299392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a97bb9a733bbec0488adc84279f6dcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SIEMScript
+  range: 1.5
+  fireRate: 0.5
+  damage: 7.5
