@@ -15,7 +15,7 @@ public class WaveSystem : MonoBehaviour
     };
 
     void Start() {
-        StartCoroutine(StartWave(5));
+        StartCoroutine(StartWave(103));
     }
 
     public IEnumerator StartWave(int wave)
@@ -51,17 +51,23 @@ public class WaveSystem : MonoBehaviour
                     break;
             }
         }
-        else
+        else 
         {
-            // TODO: Add malwares
             int group = (wave-6)/5 + 1; // Group 1: 6-10, Group 2: 11-15 ...
             int malwareCount = group * 10; // Counts how many malware to spawn
+            
+            for (int i = 0; i < malwareCount; i++) 
+            {
+                int randomType = Random.Range(0, mTypes.Length);
+                int randomPort = Random.Range(0, ports.Length);
+                yield return SpawnWithDelay(mTypes[randomType], randomPort);
+            }
         }
     }
 
     IEnumerator SpawnWithDelay(MalwareType type, int port)
     {
-        ports[port-1].GetComponent<PortSpawn>().SpawnMalware(type);
+        ports[port].GetComponent<PortSpawn>().SpawnMalware(type);
         yield return new WaitForSeconds(1f);
     }
 }
