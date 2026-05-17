@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2160347160811564444}
   - component: {fileID: 1067539140285419769}
   - component: {fileID: 1625738412319560475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Router
   m_TagString: Antivirus
   m_Icon: {fileID: 0}

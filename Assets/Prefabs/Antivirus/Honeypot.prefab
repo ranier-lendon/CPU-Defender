@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3748912123715790469}
   - component: {fileID: 9204828068432810620}
   - component: {fileID: 392289839454677709}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Honeypot
   m_TagString: Antivirus
   m_Icon: {fileID: 0}
