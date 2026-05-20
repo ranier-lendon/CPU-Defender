@@ -14,59 +14,73 @@ public class WaveSystem : MonoBehaviour
         MalwareType.Spyware
     };
 
-    public void Start()
+    public void StartWaveSystem()
     {
         StartCoroutine(Wave());
     }
 
     IEnumerator Wave()
     {
-        int wave = GameManager.GetWave();
+        while (true)
+        {
+            yield return new WaitForSeconds(5f);
 
-        // For the first 5 waves
-        if (wave <= 5) 
-        {
-            switch (wave)
+            int wave = GameManager.GetWave();
+
+            // For the first 5 waves
+            if (wave <= 5)
             {
-                case 1:
-                    yield return SpawnWithDelay(mTypes[0], 0);
-                    break;
-                case 2:
-                    yield return SpawnWithDelay(mTypes[0], 0);
-                    yield return SpawnWithDelay(mTypes[1], 0);
-                    break;
-                case 3:
-                    yield return SpawnWithDelay(mTypes[0], 0);
-                    yield return SpawnWithDelay(mTypes[1], 0);
-                    yield return SpawnWithDelay(mTypes[2], 0);
-                    break;
-                case 4:
-                    yield return SpawnWithDelay(mTypes[0], 0);
-                    yield return SpawnWithDelay(mTypes[1], 0);
-                    yield return SpawnWithDelay(mTypes[2], 0);
-                    yield return SpawnWithDelay(mTypes[3], 0);
-                    break;
-                case 5:
-                    yield return SpawnWithDelay(mTypes[0], 0);
-                    yield return SpawnWithDelay(mTypes[1], 0);
-                    yield return SpawnWithDelay(mTypes[2], 0);
-                    yield return SpawnWithDelay(mTypes[3], 0);
-                    yield return SpawnWithDelay(mTypes[4], 0);
-                    break;
+                switch (wave)
+                {
+                    case 1:
+                        yield return SpawnWithDelay(mTypes[0], 0);
+                        break;
+                    case 2:
+                        yield return SpawnWithDelay(mTypes[0], 0);
+                        yield return SpawnWithDelay(mTypes[1], 0);
+                        break;
+                    case 3:
+                        yield return SpawnWithDelay(mTypes[0], 0);
+                        yield return SpawnWithDelay(mTypes[1], 0);
+                        yield return SpawnWithDelay(mTypes[2], 0);
+                        break;
+                    case 4:
+                        yield return SpawnWithDelay(mTypes[0], 0);
+                        yield return SpawnWithDelay(mTypes[1], 0);
+                        yield return SpawnWithDelay(mTypes[2], 0);
+                        yield return SpawnWithDelay(mTypes[3], 0);
+                        break;
+                    case 5:
+                        yield return SpawnWithDelay(mTypes[0], 0);
+                        yield return SpawnWithDelay(mTypes[1], 0);
+                        yield return SpawnWithDelay(mTypes[2], 0);
+                        yield return SpawnWithDelay(mTypes[3], 0);
+                        yield return SpawnWithDelay(mTypes[4], 0);
+                        break;
+                }
             }
-        }
-        else 
-        {
-            int group = (wave-6)/5 + 1; // Group 1: 6-10, Group 2: 11-15 ...
-            int malwareCount = Mathf.Clamp(group * 10, 10, 100); // Counts how many malware to spawn
-            
-            for (int i = 0; i < malwareCount; i++) 
+            else
             {
-                // Spawns random malware on random ports
-                int randomType = Random.Range(0, mTypes.Length);
-                int randomPort = Random.Range(0, ports.Length);
-                yield return SpawnWithDelay(mTypes[randomType], randomPort);
+                int group = (wave-6)/5 + 1; // Group 1: 6-10, Group 2: 11-15 ...
+                int malwareCount = Mathf.Clamp(group * 10, 10, 100); // Counts how many malware to spawn
+
+                for (int i = 0; i < malwareCount; i++)
+                {
+                    // Spawns random malware on random ports
+                    int randomType = Random.Range(0, mTypes.Length);
+                    int randomPort = Random.Range(0, ports.Length);
+                    yield return SpawnWithDelay(mTypes[randomType], randomPort);
+                }
             }
+
+            // Wait until all enemies are destroyed before starting the next wave
+            while (FindObjectsOfType<EnemyScript>().Length > 0)
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
+
+            // Next wave
+            GameManager.IncrementWave();
         }
     }
 
