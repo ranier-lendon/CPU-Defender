@@ -19,6 +19,8 @@ public class SIEMScript : MonoBehaviour
     private int baseCost = 50;
     private float costMultiplier = 1.5f;
     
+    [SerializeField] private GameObject projectile;
+    
     void Start()
     {
         sphereCollider = GetComponent<SphereCollider>();
@@ -42,7 +44,9 @@ public class SIEMScript : MonoBehaviour
             target = malwareList[0];
 
             // Damage the first malware on the list.
-            target.GetComponent<EnemyScript>().TakeDamage(damage);
+            // target.GetComponent<EnemyScript>().TakeDamage(damage);
+            GameObject bullet = Instantiate(projectile, transform.position, Quaternion.identity);
+            bullet.GetComponent<ProjectileScript>().Attack(damage, target);
             
             yield return new WaitForSeconds(fireRate);
         }
