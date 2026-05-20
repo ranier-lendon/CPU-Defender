@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: bfc0506b0203092478705990595e40b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2880005726330890076
+    second: Infection Meter_0
+  - first:
+      213: -6944465760515647563
+    second: Infection Meter_1
+  - first:
+      213: 4882527888861653661
+    second: Infection Meter_2
+  - first:
+      213: 2763804784875552353
+    second: Infection Meter_3
+  - first:
+      213: 8258686388537907223
+    second: Infection Meter_4
+  - first:
+      213: 8784642226537537102
+    second: Infection Meter_5
+  - first:
+      213: 5883177403420615507
+    second: Infection Meter_6
+  - first:
+      213: 4492536994315701682
+    second: Infection Meter_7
+  - first:
+      213: -9096776969572261575
+    second: Infection Meter_8
+  - first:
+      213: 3472036809159440072
+    second: Infection Meter_9
+  - first:
+      213: -3117694093129359306
+    second: Infection Meter_10
+  - first:
+      213: 756466465202835744
+    second: Infection Meter_11
+  - first:
+      213: 6617005998762925382
+    second: Infection Meter_12
+  - first:
+      213: 8173448642919287062
+    second: Infection Meter_13
+  - first:
+      213: 3046836648043612986
+    second: Infection Meter_14
+  - first:
+      213: 8841139360804691717
+    second: Infection Meter_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Infection Meter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 1018
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8d4f20d0a2808d0800000000000000
+      internalID: -2880005726330890076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 13
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b71a952f2d40af90800000000000000
+      internalID: -6944465760515647563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 13
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9a69850f3932c340800000000000000
+      internalID: 4882527888861653661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_3
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 13
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e380ffec10b5620800000000000000
+      internalID: 2763804784875552353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 43
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718d724938fbc9270800000000000000
+      internalID: 8258686388537907223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 13
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e9aafdf8159e970800000000000000
+      internalID: 8784642226537537102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 13
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353ad719dae35a150800000000000000
+      internalID: 5883177403420615507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_7
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 13
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd0d760892b85e30800000000000000
+      internalID: 4492536994315701682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_8
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 12
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931e0bffa81c1c180800000000000000
+      internalID: -9096776969572261575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_9
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 12
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6770115172f2030800000000000000
+      internalID: 3472036809159440072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_10
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 13
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630e0b49db9bbb4d0800000000000000
+      internalID: -3117694093129359306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_11
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 12
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02119eefd328f7a00800000000000000
+      internalID: 756466465202835744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 13
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d94e0c5e354db50800000000000000
+      internalID: 6617005998762925382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_13
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 12
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6194a176c3ced6170800000000000000
+      internalID: 8173448642919287062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_14
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 12
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b084fd9c9884a20800000000000000
+      internalID: 3046836648043612986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Infection Meter_15
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 13
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fdc72086902ba70800000000000000
+      internalID: 8841139360804691717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Infection Meter_0: -2880005726330890076
+      Infection Meter_1: -6944465760515647563
+      Infection Meter_10: -3117694093129359306
+      Infection Meter_11: 756466465202835744
+      Infection Meter_12: 6617005998762925382
+      Infection Meter_13: 8173448642919287062
+      Infection Meter_14: 3046836648043612986
+      Infection Meter_15: 8841139360804691717
+      Infection Meter_2: 4882527888861653661
+      Infection Meter_3: 2763804784875552353
+      Infection Meter_4: 8258686388537907223
+      Infection Meter_5: 8784642226537537102
+      Infection Meter_6: 5883177403420615507
+      Infection Meter_7: 4492536994315701682
+      Infection Meter_8: -9096776969572261575
+      Infection Meter_9: 3472036809159440072
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
