@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
 
         // Get WaveSystem
         waveSystem = transform.GetChild(0).GetComponent<WaveSystem>();
-        waveSystem.Start();
+        waveSystem.StartWaveSystem();
 
         // Get UI
         gameOverUI = GameObject.Find("GameOverUI");
@@ -48,6 +48,21 @@ public class GameManager : MonoBehaviour
     public static int GetWave()
     {
         return wave;
+    }
+
+    public static void IncrementWave()
+    {
+        wave++;
+
+        GameObject systemUI = GameObject.Find("System");
+        if (systemUI != null)
+        {
+            var textComponent = systemUI.GetComponent<TMPro.TextMeshProUGUI>();
+            if (textComponent != null)
+            {
+                textComponent.text = "System: " + wave;
+            }
+        }
     }
 
     public static void AddMoney(float amount)
