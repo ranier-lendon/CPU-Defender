@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8507503291351976426}
   - component: {fileID: 4665925441053132472}
-  - component: {fileID: 6756573444214613748}
   - component: {fileID: 3218282281003924037}
   m_Layer: 6
   m_Name: Firewall
@@ -94,22 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &6756573444214613748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391385484458570939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b4e574c175dbaf47a4a5f72d64d8bd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FirewallScript
-  range: 1.75
-  fireRate: 1.5
-  damage: 10
-  projectile: {fileID: 0}
 --- !u!65 &3218282281003924037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -178,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FirewallScript
   range: 1.75
   fireRate: 1.5
-  damage: 10
+  damage: 15
   projectile: {fileID: 6333707540300993850, guid: cd9dadbc97cd0544ba34e5868f30d6ac, type: 3}
 --- !u!135 &2712567401084155273
 SphereCollider:

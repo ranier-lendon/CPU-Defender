@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class SIEMScript : MonoBehaviour
+public class SIEMScript : MonoBehaviour, ICostable
 {
     private SphereCollider sphereCollider;
     private List<GameObject> malwareList = new List<GameObject>();
@@ -16,7 +16,7 @@ public class SIEMScript : MonoBehaviour
     private float maxRange = 2.5f;
     [SerializeField] private float fireRate;
     [SerializeField] private float damage;
-    private int baseCost = 50;
+    private int baseCost = 250;
     private float costMultiplier = 1.5f;
     
     [SerializeField] private GameObject projectile;

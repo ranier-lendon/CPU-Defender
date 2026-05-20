@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class HoneypotScript : MonoBehaviour
+public class HoneypotScript : MonoBehaviour, ICostable
 {
     private SphereCollider col;
 

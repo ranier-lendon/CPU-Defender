@@ -96,7 +96,17 @@ public class PlacementSystem : MonoBehaviour
         {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = -1;
-            Instantiate(towerPrefabs[towerIndex], mousePosition, Quaternion.identity);
+
+            // Check if can buy the tower
+            int cost = towerPrefabs[towerIndex].GetComponent<ICostable>().GetCost();
+            if (GameManager.Withdraw(cost))
+            {
+                Instantiate(towerPrefabs[towerIndex], mousePosition, Quaternion.identity);
+            }
+            else
+            {
+                Debug.Log("Can't afford this tower");
+            }
         } 
         else
         {

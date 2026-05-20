@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class FirewallScript : MonoBehaviour
+public class FirewallScript : MonoBehaviour, ICostable
 {
     private SphereCollider sphereCollider;
     private List<GameObject> malwareList = new List<GameObject>();
@@ -18,7 +18,7 @@ public class FirewallScript : MonoBehaviour
     private float baseFireRate = 1.5f;
     private float maxFireRate = 0.75f;
     [SerializeField] private float damage;
-    private int baseCost = 75;
+    private int baseCost = 100;
     private float costMultiplier = 1.5f;
 
     [SerializeField] private GameObject projectile;
