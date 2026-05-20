@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -37,8 +38,19 @@ public class EnemyScript : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(transform.position + FindPath() * Time.fixedDeltaTime * movementSpeed);
+        GameObject nextWaypoint;
 
-        GameObject nextWaypoint = waypoints[currentWaypoint + 1];
+        // Checks if the enemy has reached the target waypoint
+        try
+        {
+            nextWaypoint = waypoints[currentWaypoint + 1];
+        }
+        catch (IndexOutOfRangeException)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
         // Checks if the enemy has reached the target waypoint
         if (Vector3.Distance(transform.position, nextWaypoint.transform.position) < 0.05f)
         {
@@ -49,10 +61,18 @@ public class EnemyScript : MonoBehaviour
 
     private Vector3 FindPath()
     {
-        GameObject nextWaypoint = waypoints[currentWaypoint + 1];
+        try
+        {
+            GameObject nextWaypoint = waypoints[currentWaypoint + 1];
     
-        Vector3 direction = (nextWaypoint.transform.position - transform.position).normalized;
-        return direction;
+            Vector3 direction = (nextWaypoint.transform.position - transform.position).normalized;
+            return direction;
+        }
+        catch (IndexOutOfRangeException)
+        {
+            Destroy(gameObject);
+            return Vector3.zero;
+        }
     }
 
     public void TakeDamage(float damage)
