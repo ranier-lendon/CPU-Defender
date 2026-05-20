@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class AuthenticationScript : MonoBehaviour
+public class AuthenticationScript : MonoBehaviour, ICostable
 {
     private SphereCollider sphereCollider;
     private List<GameObject> malwareList = new List<GameObject>();
@@ -18,7 +18,7 @@ public class AuthenticationScript : MonoBehaviour
     private float baseFireRate = 2f;
     private float maxFireRate = 1f;
     [SerializeField] private float damage;
-    private int baseCost = 100;
+    private int baseCost = 50;
     private float costMultiplier = 1.5f;
 
     [SerializeField] private GameObject projectile;

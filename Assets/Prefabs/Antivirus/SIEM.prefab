@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SIEMScript
   range: 1.5
   fireRate: 0.5
-  damage: 7.5
+  damage: 20
   projectile: {fileID: 1935063486711673429, guid: 532be918dbb58d147af3196f1ea946b3, type: 3}
 --- !u!135 &8297505552832702470
 SphereCollider:
@@ -80,7 +80,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6612122121834927320}
   - component: {fileID: 472925573570131806}
-  - component: {fileID: 9009101264878486898}
   - component: {fileID: 4131854399390067036}
   m_Layer: 6
   m_Name: SIEM
@@ -164,22 +163,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &9009101264878486898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2861274709127898098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a97bb9a733bbec0488adc84279f6dcfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SIEMScript
-  range: 1.5
-  fireRate: 0.5
-  damage: 7.5
-  projectile: {fileID: 0}
 --- !u!65 &4131854399390067036
 BoxCollider:
   m_ObjectHideFlags: 0

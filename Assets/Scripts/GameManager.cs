@@ -65,12 +65,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static void AddMoney(float amount)
-    {
-        money += amount;
-        Debug.Log("Money: " + money);
-    }
-
     public static void GameOver()
     {
         // Hides GameUI
@@ -89,5 +83,37 @@ public class GameManager : MonoBehaviour
         gameOverUI.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "[Defended] " + (wave - 1) + " Systems";
         gameOverUI.SetActive(true);
         Time.timeScale = 0f;
+    }
+
+    // Economy System
+    public static void Deposit(float amount)
+    {
+        money += amount;
+        UpdateEconomyUI();
+    }
+
+    public static bool Withdraw(float amount)
+    {
+        if (money >= amount)
+        {
+            money -= amount;
+            UpdateEconomyUI();
+            return true;
+        }
+
+        return false;
+    }
+
+    public static void UpdateEconomyUI()
+    {
+        GameObject dataUI = GameObject.Find("Data");
+        if (dataUI != null)
+        {
+            var textComponent = dataUI.GetComponent<TMPro.TextMeshProUGUI>();
+            if (textComponent != null)
+            {
+                textComponent.text = "Data: " + money;
+            }
+        }
     }
 }

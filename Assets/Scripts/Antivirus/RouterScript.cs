@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class RouterScript : MonoBehaviour
+public class RouterScript : MonoBehaviour, ICostable
 {
     private int level = 1;
     private float moneyPerSecond = 1f;
@@ -17,7 +17,7 @@ public class RouterScript : MonoBehaviour
     {
         while (true)
         {
-            GameManager.AddMoney(moneyPerSecond);
+            GameManager.Deposit(moneyPerSecond);
             yield return new WaitForSeconds(1f);
         }
     }
