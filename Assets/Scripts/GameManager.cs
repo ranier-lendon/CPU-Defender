@@ -11,10 +11,14 @@ public class GameManager : MonoBehaviour
         Spyware = 4
     }
 
-    [SerializeField] private static float money = 0;
-    [SerializeField] private static int wave = 6;
+    // Game Data
+    private static float money = 10;
+    private static int wave = 1;
 
     private WaveSystem waveSystem;
+
+    private static GameObject gameOverUI;
+    private static GameObject gameUI;
 
     // Introducing Malwares
     // Wave 1-5: 1*wave malwares
@@ -26,9 +30,19 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        waveSystem = transform.GetChild(0).GetComponent<WaveSystem>();
+        // Ensures the game starts at normal speed
+        Time.timeScale = 1f;
 
+        // Get WaveSystem
+        waveSystem = transform.GetChild(0).GetComponent<WaveSystem>();
         waveSystem.Start();
+
+        // Get UI
+        gameOverUI = GameObject.Find("GameOverUI");
+        gameUI = GameObject.Find("GameUI");
+
+        // Hide GameOverUI
+        gameOverUI.SetActive(false);
     }
 
     public static int GetWave()
@@ -40,5 +54,25 @@ public class GameManager : MonoBehaviour
     {
         money += amount;
         Debug.Log("Money: " + money);
+    }
+
+    public static void GameOver()
+    {
+        // Hides GameUI
+        gameUI.SetActive(false);
+
+        // Setup Highest Wave
+        int highestWave = PlayerPrefs.GetInt("HighestWave", 0);
+        if (wave > highestWave)
+        {
+            highestWave = wave;
+            PlayerPrefs.SetInt("HighestWave", highestWave);
+        }
+        
+        // Setup GameOverUI
+        gameOverUI.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "[Highest] " + (highestWave - 1) + " Systems";
+        gameOverUI.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = "[Defended] " + (wave - 1) + " Systems";
+        gameOverUI.SetActive(true);
+        Time.timeScale = 0f;
     }
 }
