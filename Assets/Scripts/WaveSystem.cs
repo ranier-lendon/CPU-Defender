@@ -79,6 +79,9 @@ public class WaveSystem : MonoBehaviour
                 yield return new WaitForSeconds(0.5f);
             }
 
+            // Reward player for completing the wave
+            GameManager.Deposit(wave * 10);
+
             // Next wave
             GameManager.IncrementWave();
         }

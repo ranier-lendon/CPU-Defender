@@ -86,6 +86,7 @@ public class EnemyScript : MonoBehaviour
 
     private void Die()
     {
+        GameManager.Deposit(5);
         Destroy(gameObject);
     }
 

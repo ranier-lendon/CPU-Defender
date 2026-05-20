@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Game Data
-    private static float money = 10;
+    private static float money = 50;
     private static int wave = 1;
 
     private WaveSystem waveSystem;

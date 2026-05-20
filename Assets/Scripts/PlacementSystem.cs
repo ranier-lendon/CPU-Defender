@@ -98,7 +98,17 @@ public class PlacementSystem : MonoBehaviour
             mousePosition.z = -1;
 
             // Check if can buy the tower
-            int cost = towerPrefabs[towerIndex].GetComponent<ICostable>().GetCost();
+            ICostable costable = towerPrefabs[towerIndex].GetComponentInChildren<ICostable>();
+            int cost = 0;
+            if (costable != null)
+            {
+                cost = costable.GetCost();
+            }
+            else
+            {
+                Debug.LogError("No ICostable component found on tower prefab or its children!");
+            }
+
             if (GameManager.Withdraw(cost))
             {
                 Instantiate(towerPrefabs[towerIndex], mousePosition, Quaternion.identity);
